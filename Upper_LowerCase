@@ -1,0 +1,10 @@
+def myfunc(name):
+    step = []
+    for index in range(len(name)):
+        if index % 2 ==0:
+            step.append(name[index].upper())
+        else:
+            step.append(name[index].lower())
+    return ''.join(step)
+
+myfunc('Some Random Items')
